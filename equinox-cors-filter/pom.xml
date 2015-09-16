@@ -1,0 +1,51 @@
+<project xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://maven.apache.org/POM/4.0.0" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+  <modelVersion>4.0.0</modelVersion>
+  <groupId>com.organization</groupId>
+  <artifactId>equinox-cors-filter</artifactId>
+  <version>1.0.0.qualifier</version>
+  <packaging>eclipse-plugin</packaging>
+  <properties>
+    <tycho-version>0.19.0</tycho-version>
+  </properties>
+  <build>
+
+    <resources>
+      <resource>
+        <directory>src/main/resources</directory>
+      </resource>
+      <resource>
+        <directory>.</directory>
+        <includes>
+          <include>plugin.xml</include>
+          <include>build.properties</include>
+        </includes>
+      </resource>
+    </resources>
+
+    <plugins>
+      <plugin>
+<!-- enable tycho build extension -->
+        <groupId>org.eclipse.tycho</groupId>
+        <artifactId>tycho-maven-plugin</artifactId>
+        <version>${tycho-version}</version>
+        <extensions>true</extensions>
+      </plugin>
+    </plugins>
+
+  </build>
+
+  <repositories>
+    <repository>
+      <id>eclipse-mars-4.5</id>
+      <layout>p2</layout>
+      <url>http://download.eclipse.org/eclipse/updates/4.5</url>
+    </repository>
+    <repository>
+      <id>local-p2-repo</id>
+      <layout>p2</layout>
+      <url>file:///${basedir}/../equinox-cors-filter.p2.repo/target/repository</url>
+    </repository>
+
+  </repositories>
+
+</project>

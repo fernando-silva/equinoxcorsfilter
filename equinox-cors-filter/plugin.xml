@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?eclipse version="3.4"?>
+<plugin>
+  <extension point="org.eclipse.equinox.http.registry.filters">
+    <filter alias="/" class="com.thetransactioncompany.cors.CORSFilter" load-on-startup="true">
+      <init-param name="cors.supportedMethods" value="GET, POST, HEAD, OPTIONS,PUT,DELETE"></init-param>
+      <init-param name="cors.exposedHeaders" value="Location,Etag"/>
+    </filter>
+  </extension>
+</plugin>
