@@ -1,4 +1,4 @@
 # equinoxcorsfilter
 CORS enablement for Equinox
 
-See the wiki for more informations.
+See the [Wiki](wiki) for more informations.
