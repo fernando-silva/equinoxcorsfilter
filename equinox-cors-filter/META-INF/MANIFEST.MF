@@ -3,8 +3,6 @@ Bundle-ManifestVersion: 2
 Bundle-Name: Testecors
 Bundle-SymbolicName: equinox-cors-filter;singleton:=true
 Bundle-Version: 1.0.0.qualifier
-Bundle-RequiredExecutionEnvironment: JavaSE-1.7
 Require-Bundle: org.eclipse.equinox.http.registry,
- javax.servlet;bundle-version="2.5.0",
- com.thetransactioncompany.cors-filter
+ com.thetransactioncompany.cors-filter;bundle-version="2.4.0"
 Bundle-ClassPath: .

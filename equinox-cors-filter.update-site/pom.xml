@@ -4,7 +4,7 @@
 	<groupId>com.organization</groupId>
 	<artifactId>equinox-cors-filter-update-site</artifactId>
 	<version>1.0.0.qualifier</version>
-	<packaging>eclipse-repository</packaging>
+	<packaging>eclipse-update-site</packaging>
 	<properties>
 
 		<tycho-version>0.19.0</tycho-version>
