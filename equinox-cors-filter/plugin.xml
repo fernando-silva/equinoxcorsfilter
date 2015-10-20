@@ -4,7 +4,7 @@
   <extension point="org.eclipse.equinox.http.registry.filters">
     <filter alias="/" class="com.thetransactioncompany.cors.CORSFilter" load-on-startup="true">
       <init-param name="cors.supportedMethods" value="GET, POST, HEAD, OPTIONS,PUT,DELETE"></init-param>
-      <init-param name="cors.exposedHeaders" value="Location,Etag"/>
+      <init-param name="cors.exposedHeaders" value="Location,Etag,Content-Length"/>
     </filter>
   </extension>
 </plugin>
